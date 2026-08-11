@@ -1,0 +1,45 @@
+jamal-crypto1/xdg-project? 
+# Initialize git
+git init
+
+# Add the remote (this links your local folder to GitHub)
+git remote add origin https://github.com/jamal-crypto1/xdg-project.git
+
+# Stage all files (you already have them from earlier)
+git add .
+
+# Commit
+git commit -m "XDG token full deployment with multi-sig and auto-redeem"
+
+# Rename default branch to main (if needed)
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+git checkout -b XIDIG
+git push -u origin XIDIG
+gh pr create --title "Xidig token" --body "xdg" --base main --head XIDIG
+# Initialize git (if not already done)
+git init
+
+# Add remote (your repo)
+git remote add origin https://github.com/jamal-crypto1/xdg-project.git
+
+# Stage all files
+git add .
+
+# Commit
+git commit -m "XDG token full deployment with multi-sig and auto-redeem"
+
+# Rename branch to main
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+
+# Create and push XIDIG branch
+git checkout -b XIDIG
+git push -u origin XIDIG
+
+# Create pull request (requires GitHub CLI)
+gh pr create --title "Xidig token" --body "xdg" --base main --head XIDIG
